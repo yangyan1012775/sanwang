@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心-个人信息</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/share.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_592756_gbwl57pnvv9ozuxr.css">
+</head>
+<body>
+
+<!--pc头部-->
+<header class="mobile-none r-position">
+    <div class="container">
+        <div class="fl head-logo">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <ul class="fl pc-nav">
+            <li class="i-block r-position"><a href="guide-all.html">选课指南</a></li>
+            <li class="i-block r-position"><a href="courses.html">所有课程</a></li>
+            <li class="i-block r-position">
+                <a href="exam-service.html">三网服务</a>
+                <ul class="pc-nav-inner a-position">
+                    <li><a href="exam-service.html">考试服务</a></li>
+                    <li><a href="enterprise-service.html">企业服务</a></li>
+                    <li><a href="school-service.html">高校服务</a></li>
+                </ul>
+            </li>
+            <li class="i-block r-position">
+                <a href="about.html">关于三网</a>
+                <ul class="pc-nav-inner a-position">
+                    <li><a href="about.html">关于三网</a></li>
+                    <li><a href="#">企业文化</a></li>
+                    <li><a href="#">客户展示</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="fr">
+            <a href="javascript:void(0);" class="weixin r-position"><i class="iconfont icon-erweima"></i>微信号
+                <div class="ewm a-position">
+                    <img src="img/erweima.jpg" alt="">
+                </div>
+            </a>
+            <a href="#" class="login" data-toggle="modal" data-target="#myModal">登录</a>
+            <span>/</span>
+            <a href="#" class="register" data-toggle="modal" data-target="#myModal-1">注册</a>
+            <a href="javascript:void(0)" class="search r-position">
+                <span class="iconfont icon-search"></span>
+                <input type="text" class="a-position search-inp" placeholder="请输入关键字">
+            </a>
+        </div>
+    </div>
+</header>
+<!-- mobile导航 -->
+<div class="mobile-logo r-position pc-none">
+    <div class="fl"><img src="img/logo.png" alt=""></div>
+    <div class="fr side-menu-trigger"><p class="iconfont icon-ego-menu"></p></div>
+    <div class="clear"></div>
+</div>
+<nav class="sidebar-menu pc-none" data-component="sidebar-menu">
+    <header class="sidebar-menu__header mobile-menu-back">
+        <a class="sidebar-menu__title sidebar-menu--trigger" href="#">导航 <span class="glyphicon fr glyphicon-remove" aria-hidden="true" style="margin-top: 14px;"></span></a>
+        <div class="sidebar-menu__close"></div>
+    </header>
+    <ul class="sidebar-menu__list">
+        <li class="sidebar-menu__item sidebar-menu__item--has-children "> <a href="index.html" class="sidebar-menu__link" data-menu-url=""> <span class="dd-sliding-u-l-r">网站首页</span> <span class="glyphicon glyphicon-menu-right"></span> </a>
+        </li>
+        <li class="sidebar-menu__item sidebar-menu__item--has-children "> <a href="guide-all.html" class="sidebar-menu__link" data-menu-url=""> <span class="dd-sliding-u-l-r">选课指南</span> <span class="glyphicon glyphicon-menu-right"></span> </a>
+        </li>
+        <li class="sidebar-menu__item sidebar-menu__item--has-children "> <a href="courses.html" class="sidebar-menu__link" data-menu-url=""> <span class="dd-sliding-u-l-r">所有课程</span> <span class="glyphicon glyphicon-menu-right"></span> </a>
+        </li>
+        <!--二级导航-->
+        <li class="sidebar-menu__item sidebar-menu__item--has-children "> <a href="#" class="sidebar-menu__link" data-menu-url=""> <span class="dd-sliding-u-l-r">三网服务</span> <span class="glyphicon glyphicon-menu-right"></span> </a>
+            <!-- Load inner links / recursively walk through menu tree -->
+            <ul class="sidebar-menu__list search_submenu newlist">
+                <li class="sidebar-menu__item sidebar-menu__item--back"> <a class="sidebar-menu__link sidebar-menu__subtitle" href=""> <span class="glyphicon glyphicon-menu-left"></span> 返回 </a></li>
+                <!--  Inner Menu Link -->
+                <li class="sidebar-menu__item">
+                    <a href="exam-service.html"> <span class="dd-sliding-u-l-r sidebar-menu__link">考试服务</span> </a>
+
+                </li>
+                <li class="sidebar-menu__item">
+                    <a href="enterprise-service.html"> <span class="dd-sliding-u-l-r sidebar-menu__link">企业服务</span> </a>
+                </li>
+                <li class="sidebar-menu__item">
+                    <a href="school-service.html"> <span class="dd-sliding-u-l-r sidebar-menu__link">高校服务</span> </a>
+                </li>
+                <!--  Inner Menu Link -->
+            </ul>
+        </li>
+        <!--二级导航-->
+        <li class="sidebar-menu__item sidebar-menu__item--has-children "> <a href="about.html" class="sidebar-menu__link" data-menu-url=""> <span class="dd-sliding-u-l-r">关于三网</span> <span class="glyphicon glyphicon-menu-right"></span> </a>
+            <!-- Load inner links / recursively walk through menu tree -->
+            <ul class="sidebar-menu__list search_submenu newlist">
+                <li class="sidebar-menu__item sidebar-menu__item--back"> <a class="sidebar-menu__link sidebar-menu__subtitle" href=""> <span class="glyphicon glyphicon-menu-left"></span> 返回 </a></li>
+                <!--  Inner Menu Link -->
+                <li class="sidebar-menu__item">
+                    <a href=""> <span class="dd-sliding-u-l-r sidebar-menu__link">关于三网</span> </a>
+
+                </li>
+                <li class="sidebar-menu__item">
+                    <a href=""> <span class="dd-sliding-u-l-r sidebar-menu__link">企业文化</span> </a>
+                </li>
+                <li class="sidebar-menu__item">
+                    <a href=""> <span class="dd-sliding-u-l-r sidebar-menu__link">客户展示</span> </a>
+                </li>
+                <li class="sidebar-menu__item">
+                    <a href=""> <span class="dd-sliding-u-l-r sidebar-menu__link">联系我们</span> </a>
+                </li>
+                <!--  Inner Menu Link -->
+            </ul>
+        </li>
+        <li class="mobile-search">
+            <div class="register-login">
+                <a href="#" class="login close-login" data-toggle="modal" data-target="#myModal">登录</a>
+                <span>/</span>
+                <a href="#" class="register close-login" data-toggle="modal" data-target="#myModal-1">注册</a>
+            </div>
+        </li>
+        <li class="mobile-search">
+            <div class="search i-block r-position">
+                <input type="text" placeholder="请输入关键词">
+                <a href="#" class="a-position"><i class="iconfont icon-search"></i></a>
+            </div>
+        </li>
+        <!--三级导航-->
+        <!--<li class="sidebar-menu__item sidebar-menu__item&#45;&#45;has-children "> <a href="###" class="sidebar-menu__link" data-menu-url=""> <span class="dd-sliding-u-l-r">产品中心</span> <span class="glyphicon glyphicon-menu-right"></span> </a>-->
+        <!--&lt;!&ndash; Load inner links / recursively walk through menu tree &ndash;&gt;-->
+        <!--<ul class="sidebar-menu__list search_submenu newlist">-->
+        <!--<li class="sidebar-menu__item sidebar-menu__item&#45;&#45;back"> <a class="sidebar-menu__link sidebar-menu__subtitle" href=""> <span class="glyphicon glyphicon-menu-left"></span> 返回 </a></li>-->
+        <!--&lt;!&ndash;  Inner Menu Link &ndash;&gt;-->
+        <!--<li class="sidebar-menu__item sidebar-menu__item&#45;&#45;has-children">-->
+        <!--<a href=""> <span class="dd-sliding-u-l-r sidebar-menu__link">导航1</span> </a>-->
+        <!--<ul class="sidebar-menu__list ">-->
+        <!--<li class="sidebar-menu__item sidebar-menu__item&#45;&#45;back"> <a class="sidebar-menu__link sidebar-menu__subtitle" href=""> <span class="glyphicon glyphicon-menu-left"></span> 返回 </a></li>-->
+
+        <!--<li class="sidebar-menu__item">-->
+        <!--<a href=""> <span class="dd-sliding-u-l-r sidebar-menu__link">导航3</span> </a>-->
+        <!--</li>-->
+        <!--<li class="sidebar-menu__item">-->
+        <!--<a href=""> <span class="dd-sliding-u-l-r sidebar-menu__link">导航4</span> </a>-->
+        <!--</li>-->
+
+        <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="sidebar-menu__item">-->
+        <!--<a href=""> <span class="dd-sliding-u-l-r sidebar-menu__link">导航1</span> </a>-->
+        <!--</li>-->
+        <!--&lt;!&ndash;  Inner Menu Link &ndash;&gt;-->
+        <!--</ul>-->
+        <!--</li>-->
+
+    </ul>
+</nav>
+
+    <div class="user">
+        <div class="container">
+            <div class="row">
+                <div class="left col-md-3 col-sm-4 col-xs-12">
+                    <div class="left-content">
+                        <div class="user-info">
+                            <div class="img">
+                                <img src="img/user.jpg" alt="">
+                            </div>
+                            <p class="user-name">357324327@qq.com</p>
+                            <div class="icon">
+                                <div class="icon1 r-position">
+                                    <a href="#"><i class="iconfont icon-xueshimao-shi"></i></a>
+                                    <p href="#" class="bangding a-position">已完善个人信息</p>
+                                </div>
+                                <div class="icon1 r-position">
+                                    <a href="#"><i class="iconfont icon-phone-channel"></i></a>
+                                    <p href="#" class="bangding a-position">已绑定手机号</p>
+                                </div>
+                                <div class="icon1 r-position">
+                                    <a href="#"><i class="iconfont icon-icon1"></i></a>
+                                    <p href="#" class="bangding a-position">已绑定邮箱</p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="#">课程记录</a></li>
+                            <li><a href="#">账号绑定</a></li>
+                            <li class="act"><a href="#">个人信息</a></li>
+                            <li class="note"><a href="#">通知</a><span class="fr">1</span></li>
+                            <li><a href="#">操作记录</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-8 col-xs-12">
+                    <div class="right-content">
+                        <div class="alert alert-warning alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <span>上次登录时间：2018-03-09 10:30:26</span>
+                            <span>地点：苏州</span>
+                            <a href="#">查看最近操作记录</a>
+                        </div>
+                        <div class="history">
+                            <p class="title">个人信息
+                                <a href="#" class="fr edit-info" data-toggle="modal" data-target="#myModal-3"><i class="iconfont icon-06"></i>编辑</a>
+                            </p>
+
+                            <!--个人信息-->
+                            <div class="information">
+                                <p class="name">
+                                    <span>昵称</span>
+                                    <span>签单027</span>
+                                </p>
+                                <p class="position">
+                                    <span>职位</span>
+                                    <span>未设置</span>
+                                </p>
+                                <p class="city">
+                                    <span>城市</span>
+                                    <span>未设置</span>
+                                </p>
+                                <p class="sex">
+                                    <span>性别</span>
+                                    <span>未设置</span>
+                                </p>
+                                <p class="qianming">
+                                    <span>个性签名</span>
+                                    <span>未未设置未设置未设置未设置未设置未设置未设置未设置未设置未设置未设置未设置设置</span>
+                                </p>
+                            </div>
+                            <!--个人信息-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+<!--footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-nav">
+                <div class="row">
+                    <div class="kefu-phone col-md-4 col-sm-4 col-xs-12">
+                        <p><i class="iconfont icon-msnui-telephone"></i>客服热线（周一至周日8：30-17：30）</p>
+                        <p class="footer-phone">400-690-6115</p>
+                        <div class="fl">
+                            <img src="img/erweima.jpg" alt="">
+                        </div>
+                        <div class="contact fl">
+                            <a href="#"><i class="iconfont icon-icon1"></i><span>企业邮箱</span></a>
+                            <a href="#"><i class="iconfont icon-weibo"></i><span>新浪微博</span></a>
+                            <a href="#"><i class="iconfont icon-qq"></i><span>在线客服</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 pd1">
+                        <div class="box">
+                            <div class="course">
+                                <p class="title">三网课程</p>
+                                <ul>
+                                    <li><a href="#">前端开发工程师</a></li>
+                                    <li><a href="#">数据分析师</a></li>
+                                    <li><a href="#">编程入门</a></li>
+                                </ul>
+                            </div>
+                            <div class="service">
+                                <p class="title">三网服务</p>
+                                <ul>
+                                    <li><a href="#">考试服务</a></li>
+                                    <li><a href="#">企业服务</a></li>
+                                    <li><a href="#">招聘服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 pd2">
+                        <div class="box">
+                            <div class="about">
+                                <p class="title">三网学城</p>
+                                <ul>
+                                    <li><a href="#">关于三网</a></li>
+                                    <li><a href="#">新闻中心</a></li>
+                                    <li><a href="#">联系方式</a></li>
+                                </ul>
+                            </div>
+                            <div class="help">
+                                <p class="title">帮助与支持</p>
+                                <ul>
+                                    <li><a href="#">帮助与常见问题</a></li>
+                                    <li><a href="#">选课指南</a></li>
+                                    <li><a href="#">法律条款</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <p class="banquan">© 2011–2018 苏州三信网际教育咨询有限公司    法律声明及隐私政策   苏公网安备 11010802023648号</p>
+        </div>
+    </footer>
+<!--返回顶部-->
+    <div class="backtop mobile-none" onclick="goTop();">
+        <p class="iconfont icon-53"></p>
+    </div>
+
+    <!--登录-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <span>登录</span>
+                    <a href="#" data-toggle="modal" data-target="#myModal-1">注册</a>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="inp username">
+                            <input type="text" placeholder="请输入登录手机号">
+                        </div>
+                        <div class="inp password">
+                            <input type="text" placeholder="请输入6-16位密码">
+                        </div>
+                        <div id="radio">
+                            <span><input type="radio" name="type" value="0" class="i-block input_radio" id="radio1"/><label for="radio1"></label></span>
+                            <span class="pay">7天内自动登录</span>
+                            <a href="#" class="fr">忘记密码</a>
+                        </div>
+                        <div class="inp login">
+                            <button>登录</button>
+                        </div>
+                        <div class="other-login">
+                            <span>其他方式登录</span>
+                            <a href="#"><i class="iconfont icon-qq"></i></a>
+                            <a href="#"><i class="iconfont icon-gongzhonghao"></i></a>
+                            <a href="#"><i class="iconfont icon-weibo"></i></a>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    <!--注册-->
+    <div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <!--<a href="#" data-toggle="modal" data-target="#myModal-1">登录</a>-->
+                    <span>注册</span>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="inp username">
+                            <input type="text" placeholder="请输入注册手机号">
+                        </div>
+                        <div class="yanzhengma username">
+                            <input type="text" placeholder="请输入验证码">
+                            <p class="i-block">验证码</p>
+                        </div>
+                        <div class="inp password">
+                            <input type="text" placeholder="请输入6-16位密码">
+                        </div>
+                        <div id="radio2">
+                            <span><input type="radio" name="type1" value="0" class="i-block input_radio2" id="radio3"/><label for="radio3"></label></span>
+                            <span class="pay">7天内自动登录</span>
+                            <a href="#" class="fr">忘记密码</a>
+                        </div>
+                        <div class="inp login">
+                            <button>登录</button>
+                        </div>
+                        <div class="other-login">
+                            <span>其他方式登录</span>
+                            <a href="#"><i class="iconfont icon-qq"></i></a>
+                            <a href="#"><i class="iconfont icon-gongzhonghao"></i></a>
+                            <a href="#"><i class="iconfont icon-weibo"></i></a>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    <!--编辑个人信息-->
+    <div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-edit">
+        <div class="modal-content">
+            <div class="modal-header modal-header-bangding">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <span>编辑个人信息</span>
+            </div>
+            <div class="modal-body modal-body-bangding modal-body-edit">
+                <form action="">
+                    <div class="bangding-mb">
+                        <input type="text" class="right">
+                        <p class="left">昵称:</p>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bangding-mb">
+                        <select class="right">
+                            <option value="0">请选择职位</option>
+                            <option value="1">职位1</option>
+                            <option value="2">职位2</option>
+                        </select>
+                        <p class="left">职位 :</p>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bangding-mb">
+                        <div class="right" id="distpicker">
+                            <select class="form-control" id="province10" data-province="省"></select>
+                            <select class="form-control" id="city10" data-city="市"></select>
+                            <select class="form-control" id="district10" data-district="区"></select>
+                        </div>
+                        <p class="left">所在地区:</p>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bangding-mb">
+                        <div class="right">
+                            <input type="radio" name="sex" value="female" checked><span>保密</span>
+                            <input type="radio" name="sex" value="male"><span>男</span>
+                            <input type="radio" name="sex" value="female"><span>女</span>
+                        </div>
+                        <p class="left">性别:</p>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bangding-mb">
+                        <div class="right right-textarea">
+                            <textarea name="" ></textarea>
+                            <p class="tishi">还可以输入128个字符</p>
+                        </div>
+                        <p class="left">个性签名:</p>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bangding-mb">
+                        <p class="right">
+                            <button data-dismiss="modal" aria-hidden="true">取消</button>
+                            <button>确定</button>
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                </form>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
+
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/distpicker.data.js"></script>
+    <script src="js/distpicker.js"></script>
+
+    <script type="text/javascript" src="js/my.js"></script>
+
+</body>
+</html>
