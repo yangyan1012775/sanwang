@@ -196,7 +196,7 @@ header .fr a.weixin{
     transition: all 0.5s;
 }
 .index-banner-right{
-    float: left;
+    float: right;
     width:81%;
     vertical-align: top;
     transition: all 0.5s;
